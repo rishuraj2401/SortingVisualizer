@@ -10,7 +10,7 @@ import photo1 from './photo1.png'
 const Visual = () => {
     const [a, setA] = useState([12, 21, 300, 45, 51, 11, 22, 33, 44, 555, 66, 77, 88, 99])
 
-    const [arr1, setArr1] = useState([12, 21, 300, 45, 200, 100, 35, 567, 65, 54, 34, 42])
+    const [arr1, setArr1] = useState([12, 21, 300, 45, 200, 100, 35, 567, 65, 54, 34, 42 ,12, 21, 300, 45, 200, 100, 35, 567, 65, 54, 34, 42])
     const [speed, setSpeed] = useState(50)
     const [size, setSize] = useState(5)
     const [d, setd] = useState("")
@@ -58,7 +58,7 @@ const Visual = () => {
         console.log(animation);
         // setd("true") 
         // document.getElementsByClassName("arr")[4].style.backgroundColor="pink"
-        for (let i = 0; i < animation.length - 1; i++) {
+        for (let i = 0; i < animation.length; i++) {
             const bars = document.getElementsByClassName("arr");
           
             // setd("true")
@@ -115,7 +115,7 @@ const Visual = () => {
         const animate1 = bubble(arr1);
         //    setd("true") 
         console.log(animate1);
-        for (let i = 0; i < animate1.length - 1; i++) {
+        for (let i = 0; i < animate1.length ; i++) {
             const bars = document.getElementsByClassName("arr");
             if (i % 3 !== 2) {
                 const color1 = i % 3 === 0 ? "blue" : "black"
